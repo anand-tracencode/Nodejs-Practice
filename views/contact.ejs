@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/style.css", type="text/css">
+
+    <title></title>
+  </head>
+  <body>
+    <% include ("partials/nav") %>
+    <h1>Contact Us!</h1>
+    <p>This is an JS web server contact page</p>
+
+    <form id="contact-form" method="POST" action="/contact">
+      <label for="who">Who do you want to contact</label>
+      <input type="text" name="who" value="<%= qs.person %>">
+      <label for="department">Which Deptatment</label>
+      <input type="text" name="department" value="<%= qs.dept %>">
+      <label for="email">Your Email</label>
+      <input type="text" name="email" value="">
+      <input type="submit" name="" value="submit">
+    </form>
+
+  </body>
+</html>
